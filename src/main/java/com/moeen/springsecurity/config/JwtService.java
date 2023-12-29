@@ -33,22 +33,17 @@ public class JwtService {
         return claimResolver.apply(claims);
     }
 
-    private String generateToken(Map<String, Object> extraClaims,
-                                 UserDetails userDetails
-    ) {
+    private String generateToken(Map<String, Object> extraClaims, UserDetails userDetails) {
         return buildToken(extraClaims, userDetails, tokenExpiration);
     }
 
-    public String generateRefreshToken(
-            UserDetails userDetails
-    ) {
+    public String generateRefreshToken(UserDetails userDetails) {
         return buildToken(new HashMap<>(), userDetails, tokenRefresh);
     }
 
-    private String buildToken(
-            Map<String, Object> extraClaims,
-            UserDetails userDetails,
-            long expiration) {
+    private String buildToken(Map<String, Object> extraClaims,
+            UserDetails userDetails, long expiration) {
+
         return Jwts
                 .builder()
                 .setClaims(extraClaims)

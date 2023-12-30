@@ -24,7 +24,7 @@ Auditing is a crucial aspect of application development, especially when it come
 
 To get started with this project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repository.git`
+1. Clone the repository: `https://github.com/moeenScape/spring-security.git`
 2. Install dependencies: `./gradlew build`
 3. Run the application: `./gradlew bootRun`
 

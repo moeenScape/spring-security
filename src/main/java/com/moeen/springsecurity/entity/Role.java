@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 
 import static com.moeen.springsecurity.entity.Permission.*;
 
+@Getter
 @RequiredArgsConstructor
 public enum Role {
     USER(Collections.emptySet()),

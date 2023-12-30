@@ -1,7 +1,7 @@
 package com.moeen.springsecurity.controller;
 
-import com.moeen.springsecurity.entity.AuthenticationResponse;
 import com.moeen.springsecurity.entity.model.AuthenticationRequest;
+import com.moeen.springsecurity.entity.model.AuthenticationResponse;
 import com.moeen.springsecurity.entity.model.RegisterRequest;
 import com.moeen.springsecurity.service.UserService;
 import lombok.RequiredArgsConstructor;

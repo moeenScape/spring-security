@@ -1,6 +1,5 @@
 package com.moeen.springsecurity.entity.token;
 
-import com.alibou.security.user.User;
 import com.moeen.springsecurity.entity.User;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

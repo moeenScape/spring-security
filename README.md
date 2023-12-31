@@ -34,7 +34,7 @@ To get started with this project, follow these steps:
 
 This repository explores the security-related updates introduced in Spring Security 3. It discusses key changes, deprecations, and new features in the security module, providing examples and recommendations for developers adopting this version.
 ```java
-@Bean
+    @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(req ->
